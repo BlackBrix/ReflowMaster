@@ -4,7 +4,8 @@ AC-SSR's uses SCR/thyristor or TRIAC on the output and inherently switch off (by
 and typically they have a response time that is "0.5 cycle" + 1msec  ("1 cycle" is 20ms@50Hz [or 16,66ms@60Hz])  
 Or to be more simple:   
 you can switch ON a SSR intantly* with the control input but you can not switch it OFF again in the middle of a sine half wave (in each case it will switch OFF at the next zero crossing of the load current).  
-*(SSR-Type "Instant-on switching" instead of Type "Zero switching")  
+  
+*(when using SSR-Type "Instant-on switching" instead of Type "Zero switching")  
   
     
 There are only two possible ways to "modulate" [0..100%] the heating power of the reflow oven:  
