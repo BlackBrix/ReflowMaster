@@ -1,7 +1,7 @@
 this is a good firmware already,  
 but is is technically not possible to do (fast) PWM on the DC-Input of a AC-SSR.  
 AC-SSR's uses SCR/thyristor or TRIAC on the output and inherently switch off (by themselves) at the points of zero load current (if the control-iput is low),  
-and typically they have a response time that is "0.5 cycle" + 1msec  ("1 cycle" is 20ms @ 50Hz [or 16,66ms @ 60Hz])  
+and typically they have a response time that is "0.5 cycle" + 1msec  ("1 cycle" is 20ms@50Hz [or 16,66ms@60Hz])  
 Or to be more simple:   
 you can switch ON a SSR intantly* with the control input but you can not switch it OFF again in the middle of a sine half wave (in each case it will switch OFF at the next zero crossing of the load current).  
 *(SSR-Type "Instant-on switching" instead of Type "Zero switching")  
@@ -12,7 +12,7 @@ There are only two possible ways to "modulate" [0..100%] the heating power of th
 1.) syncronizing the SSR switching with the mains frequency/phase (like evrery dimmer does)  
 you can see very well here how this is done --> https://youtu.be/8Y5AxWws0tI    
   
-2.) Doing "slow PWM" with a period that is much slower than the mains sine wave ("1 cycle" is 20ms @ 50Hz [or 16,66ms @ 60Hz])  
+2.) Doing "slow PWM" with a period that is much slower than the mains sine wave ("1 cycle" is 20ms@50Hz [or 16,66ms@60Hz])  
 since we are talking about a thermally very slow/inert system (the oven), it doesn't matter how slow it is...
   
   
