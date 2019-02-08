@@ -10,7 +10,7 @@ you can switch ON a SSR intantly* with the control input but you can not switch 
     
 There are only two possible ways to "modulate" [0..100%] the heating power of the reflow oven:  
   
-1.) syncronizing the SSR switching with the mains frequency/phase (like evrery dimmer does)  
+1.) syncronizing the SSR switching with the mains frequency/phase (like every simple light dimmer does)  
 you can see very well here how this is done --> https://youtu.be/8Y5AxWws0tI    
   
 2.) Doing "slow PWM" with a period that is much slower than the mains sine wave ("1 cycle" is 20ms@50Hz [or 16,66ms@60Hz])  
