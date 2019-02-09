@@ -20,9 +20,10 @@ you can see very well here how this is done --> https://youtu.be/8Y5AxWws0tI
 2.) using a SSR with built in phase angle control - most of them have industrial standard analog inputs like 4..20mA or 0..10V, so you have to find a way to convert the 0..3,3V PWM of the reflow master into these industrial standard signals.
   
 3.) Doing "slow PWM" with a period that is much slower than the mains sine wave ("1 cycle" is 20ms@50Hz [or 16,66ms@60Hz])  
-since we are talking about a thermally very slow/inert system (the oven), it doesn't matter how slow it is...
-  
-  
+since we are talking about a thermally very slow/inert system (the oven), it doesn't matter how slow it is...  
+(tis is also called "Burst Mode" or "Full Cycle Switching" in the reference document listed above)
+    
+    
 We are doing 3.) "slow PWM" here with 0,8 Hz (1275ms period),  
 I will modify this firmware accordingly in the future (not started yet 2019-02-08)
 
