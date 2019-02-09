@@ -1,5 +1,5 @@
 this is a good firmware already,  
-but is is technically not possible to do (fast) PWM on the DC-Input of a AC-SSR.  
+but it is technically not possible to do (fast) PWM on the DC-Input of a AC-SSR.  
 AC-SSR's uses SCR/thyristor or TRIAC on the output and inherently switch off (by themselves) at the points of zero load current (if the control-iput is low),  
 and typically they have a response time that is "0.5 cycle" + 1msec  ("1 cycle" is 20ms@50Hz [or 16,66ms@60Hz])  
 Or to be more simple:   
