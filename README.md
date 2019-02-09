@@ -25,7 +25,15 @@ since we are talking about a thermally very slow/inert system (the oven), it doe
     
     
 We are doing 3.) "slow PWM" here with 0,8 Hz (1275ms period),  
-I will modify this firmware accordingly in the future (not started yet 2019-02-08)
+I will modify this firmware accordingly in the future (not started yet 2019-02-08)  
+  
+    
+In a second step I will switch over to a PID-temperature-control algorithm, that can be easily adopted to any oven characteristics.  
+for a starting point see this links:  
+http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/    
+http://brettbeauregard.com/blog/tag/pid/  
+http://playground.arduino.cc/Code/PIDLibrary  
+https://github.com/br3ttb/Arduino-PID-Library/  
 
 
 ----
