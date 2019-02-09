@@ -8,7 +8,7 @@ you can switch ON a SSR intantly* with the control input but you can not switch 
 *(when using SSR-Type "Instant-on switching" instead of Type "Zero switching")  
     
     
-see here for reference: http://www.crydom.com/en/tech/newsletters/solid%20statements%20-%20ssrs%20switching%20types.pdf
+see here for reference: http://www.crydom.com/en/tech/newsletters/solid%20statements%20-%20ssrs%20switching%20types.pdf  
 or here as well: https://www.gavazzionline.com/pdf/ssrbrochure.pdf
     
     
