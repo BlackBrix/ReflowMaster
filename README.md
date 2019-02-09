@@ -21,7 +21,7 @@ you can see very well here how this is done --> https://youtu.be/8Y5AxWws0tI
   
 3.) Doing "slow PWM" with a period that is much slower than the mains sine wave ("1 cycle" is 20ms@50Hz [or 16,66ms@60Hz])  
 since we are talking about a thermally very slow/inert system (the oven), it doesn't matter how slow it is...  
-(tis is also called "Burst Mode" or "Full Cycle Switching" in the reference documents listed above)
+(this is also called "Burst Mode" or "Full Cycle Switching" in the reference documents listed above)
     
     
 We are doing 3.) "slow PWM" here with 0,8 Hz (1275ms period),  
