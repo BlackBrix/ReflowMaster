@@ -6,18 +6,24 @@ Or to be more simple:
 you can switch ON a SSR intantly* with the control input but you can not switch it OFF again in the middle of a sine half wave (in each case it will switch OFF at the next zero crossing of the load current).  
   
 *(when using SSR-Type "Instant-on switching" instead of Type "Zero switching")  
-  
     
-There are only two possible ways to "modulate" [0..100%] the heating power of the reflow oven:  
+    
+see here for reference: http://www.crydom.com/en/tech/newsletters/solid%20statements%20-%20ssrs%20switching%20types.pdf
+or here as well: https://www.gavazzionline.com/pdf/ssrbrochure.pdf
+    
+    
+There are three possible ways to "modulate" [0..100%] the heating power of the reflow oven:  
   
-1.) syncronizing the SSR switching with the mains frequency/phase (like every simple light dimmer does)  
+1.) syncronizing the SSR switching with the mains frequency/phase (like every simple light dimmer does) [doing phase angle control]  
 you can see very well here how this is done --> https://youtu.be/8Y5AxWws0tI    
   
-2.) Doing "slow PWM" with a period that is much slower than the mains sine wave ("1 cycle" is 20ms@50Hz [or 16,66ms@60Hz])  
+2.) using a SSR with built in phase angle control - most of them have industrial standard analog inputs like 4..20mA or 0..10V, so you have to find a way to convert the 0..3,3V PWM of the reflow master into these industrial standard signals.
+  
+3.) Doing "slow PWM" with a period that is much slower than the mains sine wave ("1 cycle" is 20ms@50Hz [or 16,66ms@60Hz])  
 since we are talking about a thermally very slow/inert system (the oven), it doesn't matter how slow it is...
   
   
-We are doing 2.) "slow PWM" here with 0,8 Hz (1275ms period),  
+We are doing 3.) "slow PWM" here with 0,8 Hz (1275ms period),  
 I will modify this firmware accordingly in the future (not started yet 2019-02-08)
 
 
