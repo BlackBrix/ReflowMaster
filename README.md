@@ -30,7 +30,7 @@ We are doing 3.) "slow PWM" here with 0,8 Hz (1275ms period),
 I will modify this firmware accordingly in the future (not started yet 2019-02-08)  
   
     
-In a second step I will switch over to a PID-temperature-control algorithm, that can be easily adopted to any oven characteristics.  
+In a second step I will switch over to a PID-temperature-control algorithm, that can be easily adopted to any oven characteristics.  (not started yet 2019-02-08)  
 for a starting point see this links:  
 http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/    
 http://brettbeauregard.com/blog/tag/pid/  
