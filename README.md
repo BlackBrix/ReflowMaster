@@ -19,7 +19,9 @@ you can see very well here how this is done --> https://youtu.be/8Y5AxWws0tI
 or here: --> https://youtu.be/_gQw_vtn0VI  
   
   
-2.) using a SSR with built in phase angle control - most of them have industrial standard analog inputs like 4..20mA or 0..10V, so you have to find a way to convert the 0..3,3V PWM of the reflow master into these industrial standard signals.
+2.) using a SSR with built in phase angle control - most of them have industrial standard analog inputs like 4..20mA or 0..10V,   so you have to find a way to convert the 0..3,3V PWM of the reflow master into these industrial standard signals.  
+(there are ready made modules that do this funktion: e.g. --> https://lorix.com/en/pwm-to-4-20ma  
+mostly based on TI XTR115/116 --> see here: https://bit.ly/2tf7zIb how PWM ins trnslated into 4..20mA)  
   
 3.) Doing "slow PWM" with a period that is much slower than the mains sine wave ("1 cycle" is 20ms@50Hz [or 16,66ms@60Hz])  
 since we are talking about a thermally very slow/inert system (the oven), it doesn't matter how slow it is...  
