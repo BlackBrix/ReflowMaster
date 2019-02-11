@@ -3,7 +3,7 @@ but it is technically not possible to do (fast) PWM on the DC-Input of a AC-SSR.
 AC-SSR's uses SCR/thyristor or TRIAC on the output and inherently switch off (by themselves) at the points of zero load current (if the control-iput is low),  
 and typically they have a response time that is "0.5 cycle" + 1msec  ("1 cycle" is 20ms@50Hz [or 16,66ms@60Hz])  
 Or to be more simple:   
-you can switch ON a SSR intantly* with the control input but you can not switch it OFF again in the middle of a sine half wave (in each case it will switch OFF at the next zero crossing of the load current).  
+you can switch ON a SSR instantly* with the control input but you can not (instantly) switch it OFF again in the middle of a sine half wave (in each case it will switch OFF at the next zero crossing of the load current).  
   
 *(when using SSR-Type "Instant-on switching" instead of Type "Zero switching")  
     
@@ -15,7 +15,9 @@ or here as well: https://www.gavazzionline.com/pdf/ssrbrochure.pdf
 There are three possible ways to "modulate" [0..100%] the heating power of the reflow oven:  
   
 1.) syncronizing the SSR switching with the mains frequency/phase (like every simple light dimmer does) [doing phase angle control]  
-you can see very well here how this is done --> https://youtu.be/8Y5AxWws0tI    
+you can see very well here how this is done --> https://youtu.be/8Y5AxWws0tI   
+or here: --> https://youtu.be/_gQw_vtn0VI  
+  
   
 2.) using a SSR with built in phase angle control - most of them have industrial standard analog inputs like 4..20mA or 0..10V, so you have to find a way to convert the 0..3,3V PWM of the reflow master into these industrial standard signals.
   
